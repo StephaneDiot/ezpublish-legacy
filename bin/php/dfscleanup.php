@@ -62,7 +62,7 @@ $pause = 1000; // microseconds, time to wait between heavy operations
 
 if ( !$checkBase && !$checkDFS )
 {
-    $cli->output( 'Nothing to do...' );
+    $cli->warning( 'Specify at least one of -B or -S' );
     $script->showHelp();
     $script->shutdown( 1 );
 }
