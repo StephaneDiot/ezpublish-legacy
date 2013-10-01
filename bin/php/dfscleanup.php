@@ -106,12 +106,6 @@ if ( $checkBase )
 
         foreach ( $files as $file )
         {
-            if ( !isset( $slept ) )
-            {
-                fgets( STDIN );
-                $slept = true;
-            }
-
             $fh = eZClusterFileHandler::instance( $file );
 
             try
